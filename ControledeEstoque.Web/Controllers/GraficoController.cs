@@ -8,11 +8,14 @@ namespace ControledeEstoque.Web.Controllers
 {
     public class GraficoController : Controller
     {
+        [Authorize]
         public ActionResult PerdasMensais()
         {
             return View();
         }
-        public ActionResult EntradasSaidas()
+
+        [Authorize]
+        public ActionResult EntradaSaidaMesa()
         {
             return View();
         }
